@@ -1,0 +1,73 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #1f242d;
+  color: #fff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4rem 12%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  transition: 0.3s ease;
+}
+.header.active {
+  background: #323946;
+}
+
+.logo {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.logo span {
+  text-shadow: 0 0 25px #0ef;
+}
+
+.navbar a {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+.navbar a:hover, .navbar a.active {
+  border-bottom: 3px solid #0ef;
+  color: #0ef;
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: #fff;
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
