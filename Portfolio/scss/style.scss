@@ -1,19 +1,21 @@
 // Variables
-$primary-color: #0ff;
+$primary-color: #0ff;              // Color variables
 $background-color: #1e1e1e;
 $text-color: #fff;
 $highlight-color: #0ff;
 $card-bg: #2a2a2a;
 $border-radius: 10px;
-$box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+$font-family: 'Arial', sans-serif;
+$margin: 0;
+$padding: 0;
 
 // Base styles
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: $font-family;
     background-color: $background-color;
     color: $text-color;
-    margin: 0;
-    padding: 0;
+    margin: $margin;
+    padding: $padding;
 }
 
 // Header
@@ -115,7 +117,7 @@ section {
             width: 250px;
             height: 250px;
             border-radius: 50%;
-            box-shadow: $box-shadow;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
         }
     }
 }
@@ -153,7 +155,7 @@ section {
             width: 250px;
             height: 250px;
             border-radius: 50%;
-            box-shadow: $box-shadow;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
         }
     }
 }
@@ -170,7 +172,7 @@ section {
             background-color: $card-bg;
             padding: 20px;
             border-radius: $border-radius;
-            box-shadow: $box-shadow;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
             width: 250px;
             text-align: left;
             transition: transform 0.3s;
@@ -214,7 +216,7 @@ section {
             width: 300px;
             height: 200px;
             border-radius: $border-radius;
-            box-shadow: $box-shadow;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
             transition: transform 0.3s;
 
             &:hover {
@@ -415,4 +417,28 @@ footer {
             width: 50%;
         }
     }
+}
+
+// Control Directives
+@for $i from 1 through 3 {
+    .example-#{i} {
+        background-color: lighten($highlight-color, $i * 5%);
+    }
+}
+
+@each $color in ($primary-color, $highlight-color) {
+    .color-swatch-#{index(($primary-color, $highlight-color), $color)} {
+        background-color: $color;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+$counter: 1;
+@while $counter <= 5 {
+    .item-#{counter} {
+        display: block;
+        margin: $counter * 10px;
+    }
+    $counter: $counter + 1;
 }
