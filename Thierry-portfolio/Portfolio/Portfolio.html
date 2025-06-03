@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thierry Chatoorang - Frontend Developer. Webdevelopment, grafisch design en digitale marketing diensten.">
+    <title>Thierry Chatoorang - Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Portfolio.</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">Over Mij</a>
+            <a href="#services">Diensten</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <article class="home-content">
+                <h1>Hallo, Ik ben<br> <span class="color-cycle">Thierry Chatoorang</span></h1>
+                <h2 class="color-cycle">Frontend Developer</h2>
+                <p>hallo ik ben Thierry , 18 jaar oud en ik ben een frontend developer met een passie voor grafisch design en digital marketing.</p>
+                <a href="https://drive.google.com/file/d/1_ohBtizXaHpBCLQDGD1ifuxJh2vjGifL/view?usp=drive_link" class="btn">Download CV</a>
+                <aside class="social-icons">
+                    <a href="https://www.linkedin.com/in/thierry-chatoorang-495844354/" aria-label="LinkedIn profiel"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/ThierryChatoorang" aria-label="GitHub profiel"><i class='bx bxl-github'></i></a>
+                </aside>
+            </article>
+            <figure class="home-img">
+                <img src="img/Thierry 3 .jpg" alt="Profielfoto van Thierry Chatoorang, Frontend Developer" width="250" height="250">
+            </figure>
+        </section>
+
+        <section class="about" id="about">
+            <article class="about-content">
+                <h2 class="color-cycle">Over <span>Mij</span></h2>
+                <h3>Frontend Developer & Web Specialist</h3>
+                <p>Met mijn kennis die ik heb opgebouwd in 2 jaren kan ik heel veel servicen bieden aan mijn klanten zoals web development, digitale marketing en grafisch design. Verder ben ik de opleiding software developer aan het doen.</p>
+                <a href="#contact" class="btn">Neem Contact Op</a>
+            </article>
+            <figure class="about-img">
+                <img src="img/Thierry4.jpg" alt="Thierry Chatoorang aan het werk als developer" width="250" height="250">
+            </figure>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="color-cycle">Mijn <span>Diensten</span></h2>
+            <section class="service-cards">
+                <article class="service-card">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Webdevelopment</h3>
+                    <p>Ik bouw moderne websites met behulp van moderne technologieën zoals HTML5, CSS3, javascript, php en MySQL </p>
+                    <a href="#contact" class="btn">Meer Info</a>
+                </article>
+                <article class="service-card">
+                    <i class='bx bx-paint'></i>
+                    <h3>Grafisch Design</h3>
+                    <p>Ik ontwerp websites en webshops voor klanten en bedrijven met behulp van verschillende design tools</p>
+                    <a href="#contact" class="btn">Meer Info</a>
+                </article>
+                <article class="service-card">
+                    <i class='bx bx-bar-chart-alt'></i>
+                    <h3>Digitale Marketing</h3>
+                    <p>Door gebruik te maken van moderne strategieën en social media promote ik mijn klanten en bedrijven.</p>
+                    <a href="#contact" class="btn">Meer Info</a>
+                </article>
+            </section>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <h2 class="color-cycle">Laatste <span>Projecten</span></h2>
+            <section class="portfolio-gallery">
+                <figure><img src="img/autowebshop.jpg" alt="E-commerce website project voor lokale winkel" width="300" height="200"></figure>
+                <figure><img src="img/suribankinjg.png" alt="Corporate website met moderne design" width="300" height="200"></figure>
+                <figure><img src="img/Screenshot 2025-05-27 104858.jpg" alt="Responsive portfolio website voor creatieve professional" width="300" height="200"></figure>
+            </section>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="color-cycle">Contact <span>Opnemen</span></h2>
+            <form id="contactForm" action="send_mail.php" method="POST">
+                <input type="text" name="name" placeholder="Volledige Naam" required aria-label="Uw volledige naam">
+                <input type="email" name="email" placeholder="E-mailadres" required aria-label="Uw e-mailadres">
+                <input type="text" name="subject" placeholder="Onderwerp" required aria-label="Onderwerp van uw bericht">
+                <textarea name="message" placeholder="Uw Bericht" required aria-label="Uw bericht"></textarea>
+                <button type="submit" class="btn">Verstuur Bericht</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Thierry Chatoorang | Frontend Developer. </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
